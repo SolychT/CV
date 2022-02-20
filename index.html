@@ -3,100 +3,135 @@
 <head>
     <meta charset="UTF-8">
     <title>Anton CV</title>
+    <link href="style.css" rel="stylesheet"/>
 </head>
 <body>
-    <!-- cellspacing делает пространство -->
-    <table cellspacing="30">
-        <tr>
-            <td>
-                <!-- alt в случае если фотка не найдена подписывает её -->
-                <img src="img/avatar.jpg"
-                width="200" height="200" alt="Моя фотка"/>
-            </td>
-            <td>
-                <h1>Антон</h1>
-                <!-- em делает текст косым -->
-                <p><em>Я начинающий <strong>разраб
-                </strong></em></p>
+    <div class="container">
+        <div class="info">
+            <!-- alt в случае если фотка не найдена подписывает её -->
+            <img src="img/avatar.jpg" alt="Моя фотка"
+            class="avatar"/>
+                <div class="info-text">
+                    <h1>Антон</h1>
+                    <!-- em делает текст косым -->
+                    <p>Я начинающий <strong>разраб
+                    </strong></p>
+                    <p>Я хочу любви</p>
+                    <div class="network">
+                        <h4>Мои социальные сети</h4>
+                        
+                            <a href="https://instagram.com/solonovichanton" 
+                            target="_blank">
+                            Instagram
+                            </a>
+                            |
+                            <a href="https://web.telegram.org/z/"
+                                target="_blank">Telegram</a>
+                </div>       
+            </div> 
+        </div>
+        
             
-            </td>
-        </tr>
-    </table>
-    
-    
-    <hr>
+       <div class="card bg-yellow">
+            <h2>Мои хобби</h2>
+            <ol class="list" type="I">
+                <li>Coding</li>
+                <li>Sport</li>
+                <li>Dota 2</li>
+                <li>Esport</li>
+                
+            </ol>
+        </div>  
+        <div class="card bg-green"> 
+            <h2>Опыт работы</h2>
+            <!-- cоздаем таблицу -->
+            <table class="table">
+                <!-- <thead> 
+                    <tr>
+                        table header -->
+                        <!-- <th>Компания</th>
+                        <th>Должность</th>
+                        <th>Год</th> -->
+                    <!-- </tr>
+                </thead> -->
+                <!-- table row -->
+                <tbody>
+                    <tr>
+                        <!-- table data -->
+                        <td>Стройка</td>
+                        <td>Строитель</td>
+                        <td>2014-2016</td>
+                    </tr>
+                    <tr>
+                        <td>Университет</td>
+                        <td>Студент</td>
+                        <td>2016-2109</td>
+                    </tr>
+                    <tr>
+                        <td>Армия НГУ</td>
+                        <td>Старший солдат</td>
+                        <td>2019-2020</td>
+                    </tr>
+                    <tr>
+                        <td>СТО</td>
+                        <td>Менеджер</td>
+                        <td>2021-NOW</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="card bg-red">
+            <h2>Youtube курсы</h2>
+            <ul class="link-list"> 
+                <li>
+                    <a href="https://www.youtube.com/watch?v=DOEtVdkKwcU&t=2991s&ab_channel=%D0%92%D0%BB%D0%B0%D0%B4%D0%B8%D0%BB%D0%B5%D0%BD%D0%9C%D0%B8%D0%BD%D0%B8%D0%BD"
+                    target="_blank">
+                     HTML для Начинающих - Практический Курс [2021] 
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.youtube.com/watch?v=SpCUuyZZTp8&t=3040s&ab_channel=%D0%92%D0%BB%D0%B0%D0%B4%D0%B8%D0%BB%D0%B5%D0%BD%D0%9C%D0%B8%D0%BD%D0%B8%D0%BD"
+                    target="_blank">
+                    CSS для Начинающих - Практический Курс [2021]
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="contact">
+            <form action="/">
+                <h2>Связаться со мной</h2>
+                <div class="row">
+                    <div class="form-group">
+                        <label for="name">Ваше имя:</label>
+                        <input type="text" id="name"
+                        placeholder="Введите ваше имя...">
+                    </div>
+                    
+                    <div class="form-group"> 
+                        <label for="email name">Ваш email:</label>
+                        <input type="email" id="email name"
+                        placeholder="Email">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="text">Ваше сообщение:</label>
+                    
+                    <textarea id="text" rows="2" cols="15"></textarea>
+                </div>
+               
+                <input class="btn" type="submit" value="Связаться">
+            </form>
+        </div>
+        
+        <!-- <div class="box-model">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div> -->
 
-    <h2>Мои социальные сети</h2>
-    <ul type="square">
-        <li><a href="https://instagram.com/solonovichanton" 
-        target="_blank">
-        Inst
-        </a></li>
-        <li><a href="https://web.telegram.org/z/"
-            target="_blank">telegram</a></li>
-    </ul>
-    <hr>
-    <h2>Мои хобби</h2>
-    <ol type="I">
-        <li>Coding</li>
-        <li>Sport</li>
-        <li>Sport</li>
-        <li>Sport</li>
-        <li>Sport</li>
-    </ol>
-    <hr>
-    <h2>Связаться со мной</h2>
-
-    <form action="/">
-        <label for="name">Ваше имя:</label>
-        <input type="text" id="name"
-        placeholder="Введите ваше имя...">
-
-        <br>
-
-        <label for="email name">Ваш email:</label>
-        <input type="email" id="email name"
-        placeholder="Email">
-
-        <br>
-
-        <label for="text">Ваше сообщение:</label>
-        <br>
-        <textarea id="text" rows="2" cols="15"></textarea>
-
-        <br>
-        <input type="submit" value="Связаться">
-    </form>
-    <hr>
-    <h2>Опыт работы</h2>
-    <!-- cоздаем таблицу -->
-    <table >
-        <thead> 
-            <tr>
-                <!-- table header -->
-                <th>Компания</th>
-                <th>Должность</th>
-                <th>Год</th>
-            </tr>
-        </thead>
-        <!-- table row -->
-        <tbody>
-            <tr>
-                <!-- table data -->
-                <td>Стройка</td>
-                <td>Строитель</td>
-                <td>2014-2016</td>
-            </tr>
-            <tr>
-                <td>СТО</td>
-                <td>Менеджер</td>
-                <td>2021</td>
-            </tr>
-        </tbody>
-    </table>
-    <hr>
-    <h2>Youtube курсы</h2>
-    <a href="youtube.html" target="_blank">Посмотреть список</a>
-    <hr>
+    </div>
+    <div style="margin-bottom: 500px">
+    </div>  
 </body>
 </html>
